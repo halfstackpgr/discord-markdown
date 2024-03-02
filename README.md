@@ -1,6 +1,6 @@
 Module `dcmarkdown`
 ===================
-Download this file using `git clone https://www.github.com/discord-markdown.git. 
+Download this file using `git clone https://www.github.com/discord-markdown.git`. 
 Use reverse import for further use. 
 Functions
 ---------
