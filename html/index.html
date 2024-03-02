@@ -1,0 +1,1208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>dcmarkdown API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>dcmarkdown</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">NOT_FOUND = &#34;❌ Not Found&#34;
+
+def underline(text:str)-&gt;str:
+    &#34;&#34;&#34;
+    Returns a string with an underlined version of the input text.
+
+    Parameters:
+        - text (str): The text to be underlined.
+
+    Returns:
+        A string with the underlined version of the input text.
+    &#34;&#34;&#34;
+    return f&#34;__{text}__&#34;
+
+def italics(text:str)-&gt;str:
+    &#34;&#34;&#34;
+    Returns a string with an italicized version of the input text.
+
+    Parameters:
+        - text (str): The text to be italicized.
+
+    Returns:
+        A string with the italicized version of the input text.
+    &#34;&#34;&#34;
+    return f&#34;*{text}*&#34;
+
+def bold(text: str) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a bold version of the input text.
+
+    Parameters:
+        - text (str): The text to be made bold.
+
+    Returns:
+        A string with the bold version of the input text.
+    &#34;&#34;&#34;
+    return f&#34;**{text}**&#34;
+
+def strikethrough(text: str) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a strikethrough version of the input text.
+
+    Parameters:
+        - text (str): The text to be given a strikethrough.
+
+    Returns:
+        A string with the strikethrough version of the input text.
+    &#34;&#34;&#34;
+    return f&#34;~~{text}~~&#34;
+
+def inline_code(text: str) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with an inline code block containing the input text.
+
+    Parameters:
+        - text (str): The text to be enclosed in the code block.
+
+    Returns:
+        A string with the input text enclosed in an inline code block.
+    &#34;&#34;&#34;
+    return f&#34;`{text}`&#34;
+
+def code_block(text: str, language: str = &#34;&#34;) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a code block containing the input text.
+
+    Parameters:
+        - text (str): The text to be enclosed in the code block.
+        - language (str): The programming language used in the code block (optional).
+
+    Returns:
+        A string with the input text enclosed in a code block, with optional language highlighting.
+    &#34;&#34;&#34;
+    if language:
+        return f&#34;```{language}\n{text}\n```&#34;
+    else:
+        return f&#34;```\n{text}\n```&#34;
+
+def quote(text: str, author: str = &#34;&#34;) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a formatted quote of the input text.
+
+    Parameters:
+        - text (str): The text to be quoted.
+        - author (str): The author of the quote (optional).
+
+    Returns:
+        A string with the input text formatted as a quote, with optional author attribution.
+    &#34;&#34;&#34;
+    if author:
+        return f&#34;&gt; {text}\n&gt; - {author}&#34;
+    else:
+        return f&#34;&gt; {text}&#34;
+
+def blockquote(text: str) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a blockquote of the input text.
+
+    Parameters:
+        - text (str): The text to be quoted.
+
+    Returns:
+        A string with the input text formatted as a blockquote.
+    &#34;&#34;&#34;
+    lines = text.split(&#39;\n&#39;)
+    quoted_lines = [f&#39;&gt; {line}\n&#39; for line in lines]
+    return &#39;&#39;.join(quoted_lines)
+
+def spoiler(text: str) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a spoiler tag enclosing the input text.
+
+    Parameters:
+        - text (str): The text to be enclosed in the spoiler tag.
+
+    Returns:
+        A string with the input text enclosed in a spoiler tag.
+    &#34;&#34;&#34;
+    return f&#39;||{text}||&#39;
+
+class mention:
+    &#34;&#34;&#34;
+    A class that contains methods for formatting user, role, and channel mentions.
+    &#34;&#34;&#34;
+    def user(self, user_id) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string with a user mention given a user ID.
+
+        Parameters:
+            - user_id (int): The user ID to be mentioned.
+
+        Returns:
+            A string with the user mention.
+        &#34;&#34;&#34;
+        if user_id == 0:
+            return NOT_FOUND
+        return f&#39;&lt;@{user_id}&gt;&#39;
+    def role(self, role_id) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string with a role mention given a role ID.
+
+        Parameters:
+            - role_id (int): The role ID to be mentioned.
+
+        Returns:
+            A string with the role mention.
+        &#34;&#34;&#34;
+        if role_id == 0:
+            return NOT_FOUND
+        return f&#39;&lt;@&amp;{str(role_id)}&gt;&#39;
+    def channel(self, channel_id) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string with a channel mention given a channel ID.
+
+        Parameters:
+            - channel_id (int): The channel ID to be mentioned.
+
+        Returns:
+            A string with the channel mention.
+        &#34;&#34;&#34;
+        if channel_id == 0:
+            return NOT_FOUND
+        return f&#39;&lt;#{channel_id}&gt;&#39;
+
+def hyperlink(url: str, alt_text: str = &#39;&#39;) -&gt; str:
+    &#34;&#34;&#34;
+    Formats a hyperlink with the specified URL and alternate text.
+
+    Parameters:
+        - url (str): The URL for the hyperlink.
+        - alt_text (str): Optional alternate text for the hyperlink.
+
+    Returns:
+        A string with the formatted hyperlink.
+    &#34;&#34;&#34;
+    return f&#39;[{alt_text}]({url})&#39;
+
+
+
+class timestamp_popup:
+    &#34;&#34;&#34;
+    A class that generates Discord timestamp strings based on a Unix timestamp.
+
+    Parameters:
+    -----------
+    timestamp: int
+        A Unix timestamp representing the time in seconds since the Unix epoch (January 1, 1970).
+
+    Attributes:
+    -----------
+    timestamp: int
+        A Unix timestamp representing the time in seconds since the Unix epoch (January 1, 1970).
+
+    Methods:
+    --------
+    short_time() -&gt; str:
+        Returns a string representing the short time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:t&gt;&#34;
+
+    long_time() -&gt; str:
+        Returns a string representing the long time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:T&gt;&#34;
+
+    short_date() -&gt; str:
+        Returns a string representing the short date format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:d&gt;&#34;
+
+    long_date() -&gt; str:
+        Returns a string representing the long date format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:D&gt;&#34;
+
+    short_datetime() -&gt; str:
+        Returns a string representing the short date and time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:f&gt;&#34;
+
+    long_datetime() -&gt; str:
+        Returns a string representing the long date and time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:F&gt;&#34;
+
+    relative_time() -&gt; str:
+        Returns a string representing the relative time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:R&gt;&#34;
+    &#34;&#34;&#34;
+    def __init__(self, timestamp: int):
+        self.timestamp = timestamp
+    def __repr__(self):
+        &#34;&#34;&#34;
+        Returns the Unix timestamp value as a string.
+
+        Returns:
+        --------
+        str:
+            A string representing the Unix timestamp value.
+        &#34;&#34;&#34;
+        return str(self.timestamp)
+    def short_time(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the short time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:t&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the short time format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:t&gt;&#39;
+    
+    def long_time(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the long time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:T&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the long time format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:T&gt;&#39;
+    def short_date(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the short date format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:d&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the short date format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:d&gt;&#39;
+    def long_date(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the long date format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:D&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the long date format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:D&gt;&#39;
+    def short_datetime(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the short date and time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:f&gt;&#34;
+        Returns:
+        --------
+        str:
+            A string representing the short date and time format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:f&gt;&#39;
+    def long_datetime(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the long date and time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:F&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the long date and time format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:F&gt;&#39;
+    def relative_time(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the relative time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:R&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the relative time format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:R&gt;&#39;</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="dcmarkdown.blockquote"><code class="name flex">
+<span>def <span class="ident">blockquote</span></span>(<span>text: str) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with a blockquote of the input text.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>text (str): The text to be quoted.</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the input text formatted as a blockquote.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def blockquote(text: str) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a blockquote of the input text.
+
+    Parameters:
+        - text (str): The text to be quoted.
+
+    Returns:
+        A string with the input text formatted as a blockquote.
+    &#34;&#34;&#34;
+    lines = text.split(&#39;\n&#39;)
+    quoted_lines = [f&#39;&gt; {line}\n&#39; for line in lines]
+    return &#39;&#39;.join(quoted_lines)</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.bold"><code class="name flex">
+<span>def <span class="ident">bold</span></span>(<span>text: str) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with a bold version of the input text.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>text (str): The text to be made bold.</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the bold version of the input text.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def bold(text: str) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a bold version of the input text.
+
+    Parameters:
+        - text (str): The text to be made bold.
+
+    Returns:
+        A string with the bold version of the input text.
+    &#34;&#34;&#34;
+    return f&#34;**{text}**&#34;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.code_block"><code class="name flex">
+<span>def <span class="ident">code_block</span></span>(<span>text: str, language: str = '') ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with a code block containing the input text.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>text (str): The text to be enclosed in the code block.</li>
+<li>language (str): The programming language used in the code block (optional).</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the input text enclosed in a code block, with optional language highlighting.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def code_block(text: str, language: str = &#34;&#34;) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a code block containing the input text.
+
+    Parameters:
+        - text (str): The text to be enclosed in the code block.
+        - language (str): The programming language used in the code block (optional).
+
+    Returns:
+        A string with the input text enclosed in a code block, with optional language highlighting.
+    &#34;&#34;&#34;
+    if language:
+        return f&#34;```{language}\n{text}\n```&#34;
+    else:
+        return f&#34;```\n{text}\n```&#34;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.hyperlink"><code class="name flex">
+<span>def <span class="ident">hyperlink</span></span>(<span>url: str, alt_text: str = '') ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Formats a hyperlink with the specified URL and alternate text.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>url (str): The URL for the hyperlink.</li>
+<li>alt_text (str): Optional alternate text for the hyperlink.</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the formatted hyperlink.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def hyperlink(url: str, alt_text: str = &#39;&#39;) -&gt; str:
+    &#34;&#34;&#34;
+    Formats a hyperlink with the specified URL and alternate text.
+
+    Parameters:
+        - url (str): The URL for the hyperlink.
+        - alt_text (str): Optional alternate text for the hyperlink.
+
+    Returns:
+        A string with the formatted hyperlink.
+    &#34;&#34;&#34;
+    return f&#39;[{alt_text}]({url})&#39;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.inline_code"><code class="name flex">
+<span>def <span class="ident">inline_code</span></span>(<span>text: str) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with an inline code block containing the input text.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>text (str): The text to be enclosed in the code block.</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the input text enclosed in an inline code block.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def inline_code(text: str) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with an inline code block containing the input text.
+
+    Parameters:
+        - text (str): The text to be enclosed in the code block.
+
+    Returns:
+        A string with the input text enclosed in an inline code block.
+    &#34;&#34;&#34;
+    return f&#34;`{text}`&#34;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.italics"><code class="name flex">
+<span>def <span class="ident">italics</span></span>(<span>text: str) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with an italicized version of the input text.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>text (str): The text to be italicized.</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the italicized version of the input text.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def italics(text:str)-&gt;str:
+    &#34;&#34;&#34;
+    Returns a string with an italicized version of the input text.
+
+    Parameters:
+        - text (str): The text to be italicized.
+
+    Returns:
+        A string with the italicized version of the input text.
+    &#34;&#34;&#34;
+    return f&#34;*{text}*&#34;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.quote"><code class="name flex">
+<span>def <span class="ident">quote</span></span>(<span>text: str, author: str = '') ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with a formatted quote of the input text.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>text (str): The text to be quoted.</li>
+<li>author (str): The author of the quote (optional).</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the input text formatted as a quote, with optional author attribution.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def quote(text: str, author: str = &#34;&#34;) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a formatted quote of the input text.
+
+    Parameters:
+        - text (str): The text to be quoted.
+        - author (str): The author of the quote (optional).
+
+    Returns:
+        A string with the input text formatted as a quote, with optional author attribution.
+    &#34;&#34;&#34;
+    if author:
+        return f&#34;&gt; {text}\n&gt; - {author}&#34;
+    else:
+        return f&#34;&gt; {text}&#34;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.spoiler"><code class="name flex">
+<span>def <span class="ident">spoiler</span></span>(<span>text: str) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with a spoiler tag enclosing the input text.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>text (str): The text to be enclosed in the spoiler tag.</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the input text enclosed in a spoiler tag.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def spoiler(text: str) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a spoiler tag enclosing the input text.
+
+    Parameters:
+        - text (str): The text to be enclosed in the spoiler tag.
+
+    Returns:
+        A string with the input text enclosed in a spoiler tag.
+    &#34;&#34;&#34;
+    return f&#39;||{text}||&#39;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.strikethrough"><code class="name flex">
+<span>def <span class="ident">strikethrough</span></span>(<span>text: str) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with a strikethrough version of the input text.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>text (str): The text to be given a strikethrough.</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the strikethrough version of the input text.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def strikethrough(text: str) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a strikethrough version of the input text.
+
+    Parameters:
+        - text (str): The text to be given a strikethrough.
+
+    Returns:
+        A string with the strikethrough version of the input text.
+    &#34;&#34;&#34;
+    return f&#34;~~{text}~~&#34;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.underline"><code class="name flex">
+<span>def <span class="ident">underline</span></span>(<span>text: str) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with an underlined version of the input text.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>text (str): The text to be underlined.</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the underlined version of the input text.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def underline(text:str)-&gt;str:
+    &#34;&#34;&#34;
+    Returns a string with an underlined version of the input text.
+
+    Parameters:
+        - text (str): The text to be underlined.
+
+    Returns:
+        A string with the underlined version of the input text.
+    &#34;&#34;&#34;
+    return f&#34;__{text}__&#34;</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="dcmarkdown.mention"><code class="flex name class">
+<span>class <span class="ident">mention</span></span>
+</code></dt>
+<dd>
+<div class="desc"><p>A class that contains methods for formatting user, role, and channel mentions.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class mention:
+    &#34;&#34;&#34;
+    A class that contains methods for formatting user, role, and channel mentions.
+    &#34;&#34;&#34;
+    def user(self, user_id) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string with a user mention given a user ID.
+
+        Parameters:
+            - user_id (int): The user ID to be mentioned.
+
+        Returns:
+            A string with the user mention.
+        &#34;&#34;&#34;
+        if user_id == 0:
+            return NOT_FOUND
+        return f&#39;&lt;@{user_id}&gt;&#39;
+    def role(self, role_id) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string with a role mention given a role ID.
+
+        Parameters:
+            - role_id (int): The role ID to be mentioned.
+
+        Returns:
+            A string with the role mention.
+        &#34;&#34;&#34;
+        if role_id == 0:
+            return NOT_FOUND
+        return f&#39;&lt;@&amp;{str(role_id)}&gt;&#39;
+    def channel(self, channel_id) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string with a channel mention given a channel ID.
+
+        Parameters:
+            - channel_id (int): The channel ID to be mentioned.
+
+        Returns:
+            A string with the channel mention.
+        &#34;&#34;&#34;
+        if channel_id == 0:
+            return NOT_FOUND
+        return f&#39;&lt;#{channel_id}&gt;&#39;</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="dcmarkdown.mention.channel"><code class="name flex">
+<span>def <span class="ident">channel</span></span>(<span>self, channel_id) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with a channel mention given a channel ID.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>channel_id (int): The channel ID to be mentioned.</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the channel mention.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def channel(self, channel_id) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a channel mention given a channel ID.
+
+    Parameters:
+        - channel_id (int): The channel ID to be mentioned.
+
+    Returns:
+        A string with the channel mention.
+    &#34;&#34;&#34;
+    if channel_id == 0:
+        return NOT_FOUND
+    return f&#39;&lt;#{channel_id}&gt;&#39;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.mention.role"><code class="name flex">
+<span>def <span class="ident">role</span></span>(<span>self, role_id) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with a role mention given a role ID.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>role_id (int): The role ID to be mentioned.</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the role mention.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def role(self, role_id) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a role mention given a role ID.
+
+    Parameters:
+        - role_id (int): The role ID to be mentioned.
+
+    Returns:
+        A string with the role mention.
+    &#34;&#34;&#34;
+    if role_id == 0:
+        return NOT_FOUND
+    return f&#39;&lt;@&amp;{str(role_id)}&gt;&#39;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.mention.user"><code class="name flex">
+<span>def <span class="ident">user</span></span>(<span>self, user_id) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string with a user mention given a user ID.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li>user_id (int): The user ID to be mentioned.</li>
+</ul>
+<h2 id="returns">Returns</h2>
+<p>A string with the user mention.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def user(self, user_id) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string with a user mention given a user ID.
+
+    Parameters:
+        - user_id (int): The user ID to be mentioned.
+
+    Returns:
+        A string with the user mention.
+    &#34;&#34;&#34;
+    if user_id == 0:
+        return NOT_FOUND
+    return f&#39;&lt;@{user_id}&gt;&#39;</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="dcmarkdown.timestamp_popup"><code class="flex name class">
+<span>class <span class="ident">timestamp_popup</span></span>
+<span>(</span><span>timestamp: int)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A class that generates Discord timestamp strings based on a Unix timestamp.</p>
+<h2 id="parameters">Parameters:</h2>
+<p>timestamp: int
+A Unix timestamp representing the time in seconds since the Unix epoch (January 1, 1970).</p>
+<h2 id="attributes">Attributes:</h2>
+<p>timestamp: int
+A Unix timestamp representing the time in seconds since the Unix epoch (January 1, 1970).</p>
+<h2 id="methods">Methods:</h2>
+<p>short_time() -&gt; str:
+Returns a string representing the short time format of the timestamp in Discord's format.
+Example: "<t:1613075120:t>"</p>
+<p>long_time() -&gt; str:
+Returns a string representing the long time format of the timestamp in Discord's format.
+Example: "<t:1613075120:T>"</p>
+<p>short_date() -&gt; str:
+Returns a string representing the short date format of the timestamp in Discord's format.
+Example: "<t:1613075120:d>"</p>
+<p>long_date() -&gt; str:
+Returns a string representing the long date format of the timestamp in Discord's format.
+Example: "<t:1613075120:D>"</p>
+<p>short_datetime() -&gt; str:
+Returns a string representing the short date and time format of the timestamp in Discord's format.
+Example: "<t:1613075120:f>"</p>
+<p>long_datetime() -&gt; str:
+Returns a string representing the long date and time format of the timestamp in Discord's format.
+Example: "<t:1613075120:F>"</p>
+<p>relative_time() -&gt; str:
+Returns a string representing the relative time format of the timestamp in Discord's format.
+Example: "<t:1613075120:R>"</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class timestamp_popup:
+    &#34;&#34;&#34;
+    A class that generates Discord timestamp strings based on a Unix timestamp.
+
+    Parameters:
+    -----------
+    timestamp: int
+        A Unix timestamp representing the time in seconds since the Unix epoch (January 1, 1970).
+
+    Attributes:
+    -----------
+    timestamp: int
+        A Unix timestamp representing the time in seconds since the Unix epoch (January 1, 1970).
+
+    Methods:
+    --------
+    short_time() -&gt; str:
+        Returns a string representing the short time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:t&gt;&#34;
+
+    long_time() -&gt; str:
+        Returns a string representing the long time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:T&gt;&#34;
+
+    short_date() -&gt; str:
+        Returns a string representing the short date format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:d&gt;&#34;
+
+    long_date() -&gt; str:
+        Returns a string representing the long date format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:D&gt;&#34;
+
+    short_datetime() -&gt; str:
+        Returns a string representing the short date and time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:f&gt;&#34;
+
+    long_datetime() -&gt; str:
+        Returns a string representing the long date and time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:F&gt;&#34;
+
+    relative_time() -&gt; str:
+        Returns a string representing the relative time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:R&gt;&#34;
+    &#34;&#34;&#34;
+    def __init__(self, timestamp: int):
+        self.timestamp = timestamp
+    def __repr__(self):
+        &#34;&#34;&#34;
+        Returns the Unix timestamp value as a string.
+
+        Returns:
+        --------
+        str:
+            A string representing the Unix timestamp value.
+        &#34;&#34;&#34;
+        return str(self.timestamp)
+    def short_time(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the short time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:t&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the short time format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:t&gt;&#39;
+    
+    def long_time(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the long time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:T&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the long time format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:T&gt;&#39;
+    def short_date(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the short date format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:d&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the short date format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:d&gt;&#39;
+    def long_date(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the long date format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:D&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the long date format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:D&gt;&#39;
+    def short_datetime(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the short date and time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:f&gt;&#34;
+        Returns:
+        --------
+        str:
+            A string representing the short date and time format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:f&gt;&#39;
+    def long_datetime(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the long date and time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:F&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the long date and time format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:F&gt;&#39;
+    def relative_time(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns a string representing the relative time format of the timestamp in Discord&#39;s format.
+        Example: &#34;&lt;t:1613075120:R&gt;&#34;
+
+        Returns:
+        --------
+        str:
+            A string representing the relative time format of the timestamp.
+        &#34;&#34;&#34;
+        return f&#39;&lt;t:{self.timestamp}:R&gt;&#39;</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="dcmarkdown.timestamp_popup.long_date"><code class="name flex">
+<span>def <span class="ident">long_date</span></span>(<span>self) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string representing the long date format of the timestamp in Discord's format.
+Example: "<t:1613075120:D>"</p>
+<h2 id="returns">Returns:</h2>
+<p>str:
+A string representing the long date format of the timestamp.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def long_date(self) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string representing the long date format of the timestamp in Discord&#39;s format.
+    Example: &#34;&lt;t:1613075120:D&gt;&#34;
+
+    Returns:
+    --------
+    str:
+        A string representing the long date format of the timestamp.
+    &#34;&#34;&#34;
+    return f&#39;&lt;t:{self.timestamp}:D&gt;&#39;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.timestamp_popup.long_datetime"><code class="name flex">
+<span>def <span class="ident">long_datetime</span></span>(<span>self) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string representing the long date and time format of the timestamp in Discord's format.
+Example: "<t:1613075120:F>"</p>
+<h2 id="returns">Returns:</h2>
+<p>str:
+A string representing the long date and time format of the timestamp.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def long_datetime(self) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string representing the long date and time format of the timestamp in Discord&#39;s format.
+    Example: &#34;&lt;t:1613075120:F&gt;&#34;
+
+    Returns:
+    --------
+    str:
+        A string representing the long date and time format of the timestamp.
+    &#34;&#34;&#34;
+    return f&#39;&lt;t:{self.timestamp}:F&gt;&#39;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.timestamp_popup.long_time"><code class="name flex">
+<span>def <span class="ident">long_time</span></span>(<span>self) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string representing the long time format of the timestamp in Discord's format.
+Example: "<t:1613075120:T>"</p>
+<h2 id="returns">Returns:</h2>
+<p>str:
+A string representing the long time format of the timestamp.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def long_time(self) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string representing the long time format of the timestamp in Discord&#39;s format.
+    Example: &#34;&lt;t:1613075120:T&gt;&#34;
+
+    Returns:
+    --------
+    str:
+        A string representing the long time format of the timestamp.
+    &#34;&#34;&#34;
+    return f&#39;&lt;t:{self.timestamp}:T&gt;&#39;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.timestamp_popup.relative_time"><code class="name flex">
+<span>def <span class="ident">relative_time</span></span>(<span>self) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string representing the relative time format of the timestamp in Discord's format.
+Example: "<t:1613075120:R>"</p>
+<h2 id="returns">Returns:</h2>
+<p>str:
+A string representing the relative time format of the timestamp.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def relative_time(self) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string representing the relative time format of the timestamp in Discord&#39;s format.
+    Example: &#34;&lt;t:1613075120:R&gt;&#34;
+
+    Returns:
+    --------
+    str:
+        A string representing the relative time format of the timestamp.
+    &#34;&#34;&#34;
+    return f&#39;&lt;t:{self.timestamp}:R&gt;&#39;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.timestamp_popup.short_date"><code class="name flex">
+<span>def <span class="ident">short_date</span></span>(<span>self) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string representing the short date format of the timestamp in Discord's format.
+Example: "<t:1613075120:d>"</p>
+<h2 id="returns">Returns:</h2>
+<p>str:
+A string representing the short date format of the timestamp.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def short_date(self) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string representing the short date format of the timestamp in Discord&#39;s format.
+    Example: &#34;&lt;t:1613075120:d&gt;&#34;
+
+    Returns:
+    --------
+    str:
+        A string representing the short date format of the timestamp.
+    &#34;&#34;&#34;
+    return f&#39;&lt;t:{self.timestamp}:d&gt;&#39;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.timestamp_popup.short_datetime"><code class="name flex">
+<span>def <span class="ident">short_datetime</span></span>(<span>self) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string representing the short date and time format of the timestamp in Discord's format.
+Example: "<t:1613075120:f>"
+Returns:</p>
+<hr>
+<p>str:
+A string representing the short date and time format of the timestamp.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def short_datetime(self) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string representing the short date and time format of the timestamp in Discord&#39;s format.
+    Example: &#34;&lt;t:1613075120:f&gt;&#34;
+    Returns:
+    --------
+    str:
+        A string representing the short date and time format of the timestamp.
+    &#34;&#34;&#34;
+    return f&#39;&lt;t:{self.timestamp}:f&gt;&#39;</code></pre>
+</details>
+</dd>
+<dt id="dcmarkdown.timestamp_popup.short_time"><code class="name flex">
+<span>def <span class="ident">short_time</span></span>(<span>self) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a string representing the short time format of the timestamp in Discord's format.
+Example: "<t:1613075120:t>"</p>
+<h2 id="returns">Returns:</h2>
+<p>str:
+A string representing the short time format of the timestamp.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def short_time(self) -&gt; str:
+    &#34;&#34;&#34;
+    Returns a string representing the short time format of the timestamp in Discord&#39;s format.
+    Example: &#34;&lt;t:1613075120:t&gt;&#34;
+
+    Returns:
+    --------
+    str:
+        A string representing the short time format of the timestamp.
+    &#34;&#34;&#34;
+    return f&#39;&lt;t:{self.timestamp}:t&gt;&#39;</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="dcmarkdown.blockquote" href="#dcmarkdown.blockquote">blockquote</a></code></li>
+<li><code><a title="dcmarkdown.bold" href="#dcmarkdown.bold">bold</a></code></li>
+<li><code><a title="dcmarkdown.code_block" href="#dcmarkdown.code_block">code_block</a></code></li>
+<li><code><a title="dcmarkdown.hyperlink" href="#dcmarkdown.hyperlink">hyperlink</a></code></li>
+<li><code><a title="dcmarkdown.inline_code" href="#dcmarkdown.inline_code">inline_code</a></code></li>
+<li><code><a title="dcmarkdown.italics" href="#dcmarkdown.italics">italics</a></code></li>
+<li><code><a title="dcmarkdown.quote" href="#dcmarkdown.quote">quote</a></code></li>
+<li><code><a title="dcmarkdown.spoiler" href="#dcmarkdown.spoiler">spoiler</a></code></li>
+<li><code><a title="dcmarkdown.strikethrough" href="#dcmarkdown.strikethrough">strikethrough</a></code></li>
+<li><code><a title="dcmarkdown.underline" href="#dcmarkdown.underline">underline</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="dcmarkdown.mention" href="#dcmarkdown.mention">mention</a></code></h4>
+<ul class="">
+<li><code><a title="dcmarkdown.mention.channel" href="#dcmarkdown.mention.channel">channel</a></code></li>
+<li><code><a title="dcmarkdown.mention.role" href="#dcmarkdown.mention.role">role</a></code></li>
+<li><code><a title="dcmarkdown.mention.user" href="#dcmarkdown.mention.user">user</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="dcmarkdown.timestamp_popup" href="#dcmarkdown.timestamp_popup">timestamp_popup</a></code></h4>
+<ul class="two-column">
+<li><code><a title="dcmarkdown.timestamp_popup.long_date" href="#dcmarkdown.timestamp_popup.long_date">long_date</a></code></li>
+<li><code><a title="dcmarkdown.timestamp_popup.long_datetime" href="#dcmarkdown.timestamp_popup.long_datetime">long_datetime</a></code></li>
+<li><code><a title="dcmarkdown.timestamp_popup.long_time" href="#dcmarkdown.timestamp_popup.long_time">long_time</a></code></li>
+<li><code><a title="dcmarkdown.timestamp_popup.relative_time" href="#dcmarkdown.timestamp_popup.relative_time">relative_time</a></code></li>
+<li><code><a title="dcmarkdown.timestamp_popup.short_date" href="#dcmarkdown.timestamp_popup.short_date">short_date</a></code></li>
+<li><code><a title="dcmarkdown.timestamp_popup.short_datetime" href="#dcmarkdown.timestamp_popup.short_datetime">short_datetime</a></code></li>
+<li><code><a title="dcmarkdown.timestamp_popup.short_time" href="#dcmarkdown.timestamp_popup.short_time">short_time</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
